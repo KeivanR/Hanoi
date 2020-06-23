@@ -45,4 +45,4 @@ def move(tab,n,i,j):
 		move(tab,1,i,j)
 		move(tab,n-1,k,j)
 print(tab)
-move(tab,n,0,2)
+move(tab,n,0,1)
