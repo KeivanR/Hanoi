@@ -1,5 +1,5 @@
 import time
-n = 10
+n = 12
 first_pile = []
 for i in range(n,0,-1):
 	first_pile.append(i)
@@ -35,7 +35,7 @@ def move(tab,n,i,j):
 		tab[j].append(tab[i][-1])
 		del tab[i][-1]
 		disp(tab)
-		time.sleep(.1)
+		#time.sleep(.1)
 	else:
 		o = [0,1,2]
 		o.remove(i)
@@ -45,4 +45,4 @@ def move(tab,n,i,j):
 		move(tab,1,i,j)
 		move(tab,n-1,k,j)
 print(tab)
-move(tab,n,0,1)
+move(tab,n,0,2)
